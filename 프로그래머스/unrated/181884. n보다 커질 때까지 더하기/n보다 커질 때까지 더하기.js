@@ -5,9 +5,7 @@ function solution(numbers, n) {
         if (sum > n) {
             return sum
         }
-       if (sum === n) {
-       			return sum + numbers[i+1]
-        }
+       
     }
     return sum;
 }
