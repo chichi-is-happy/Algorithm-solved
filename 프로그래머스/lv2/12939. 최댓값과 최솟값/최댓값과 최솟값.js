@@ -1,0 +1,17 @@
+const solution = (s) => {
+    const numbers = s.split(' ').map(Number);
+
+    let minValue = numbers[0];
+    let maxValue = numbers[0];
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] < minValue) {
+            minValue = numbers[i];
+        }
+        if (numbers[i] > maxValue) {
+            maxValue = numbers[i];
+        }
+    }
+
+    return `${minValue} ${maxValue}`;
+}
